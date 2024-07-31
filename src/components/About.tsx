@@ -34,31 +34,6 @@ function About() {
             <Download /> CV
           </a>
         </div>
-        {/* <div className={styles.aboutContact}>
-        <a
-          href="https://www.linkedin.com/in/gabriel-huertas-4b5b8b1b1/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/gabriel-huertas"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-      </div>
-      <div className={styles.aboutCV}>
-        <a
-          href="https://drive.google.com/file/d/1P8i0tP0q4QdCwDnB5XQp7z9Vbqj7vUwK/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Curriculum Vitae
-        </a>
-      </div> */}
       </article>
       <article className={styles.rightArticle}>
         <h1 className={styles.aboutName}>Gabriel Huertas</h1>
