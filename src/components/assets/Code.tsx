@@ -1,4 +1,4 @@
-function Code({ size = "2vw" }: { size?: string }) {
+function Code({ size = "2rem" }: { size?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

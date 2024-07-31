@@ -6,11 +6,11 @@
   --color-primary: #ffba00;
   --color-primary-accent: #cc830b;
 
-  --size-title: 3.6vw;
-  --size-subtitle: 2.5vw;
-  --size-subtitle-2: 1.8vw;
-  --size-text: 1.2vw;
-  --size-text-min: 1vw;
+  --size-title: 3.6rem;
+  --size-subtitle: 2.5rem;
+  --size-subtitle-2: 1.8rem;
+  --size-text: 1.2rem;
+  --size-text-min: 1rem;
 }
 
 [data-theme="dark"] {

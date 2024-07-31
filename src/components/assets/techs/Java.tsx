@@ -1,4 +1,4 @@
-function Java({ size = "2vw" }: { size?: string }) {
+function Java({ size = "2rem" }: { size?: string }) {
   return (
     <svg
       fill="#f5f5f5"

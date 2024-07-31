@@ -1,4 +1,4 @@
-function Moon({ size = "2vw" }: { size?: string }) {
+function Moon({ size = "2rem" }: { size?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

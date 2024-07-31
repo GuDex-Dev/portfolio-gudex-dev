@@ -1,4 +1,4 @@
-function TailwindCSS({ size = "2vw" }: { size?: string }) {
+function TailwindCSS({ size = "2rem" }: { size?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

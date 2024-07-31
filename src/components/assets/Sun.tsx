@@ -1,4 +1,4 @@
-function Sun({ size = "2vw" }: { size?: string }) {
+function Sun({ size = "2rem" }: { size?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

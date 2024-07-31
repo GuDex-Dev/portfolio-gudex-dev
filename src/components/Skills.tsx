@@ -17,7 +17,7 @@ function Skills() {
               className={styles.skill}
               key={tech.name}
             >
-              <tech.icon size="3vw" />
+              <tech.icon size="3rem" />
               {tech.name}
             </span>
           ))}
@@ -32,7 +32,7 @@ function Skills() {
               className={styles.skill}
               key={skill.name}
             >
-              <skill.icon size="3vw" />
+              <skill.icon size="3rem" />
               {skill.name}
             </span>
           ))}
