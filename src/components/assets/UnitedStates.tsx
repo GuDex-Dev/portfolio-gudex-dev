@@ -1,5 +1,3 @@
-import React from "react";
-
 function UnitedStates({ size = "2vw" }: { size?: string }) {
   return (
     <svg

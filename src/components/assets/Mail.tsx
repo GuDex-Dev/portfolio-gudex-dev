@@ -1,5 +1,3 @@
-import React from "react";
-
 function Mail({ size = "2vw" }: { size?: string }) {
   return (
     <svg
