@@ -4,6 +4,7 @@ import GitHub from "./assets/GitHub";
 import Download from "./assets/Download";
 
 function About() {
+
   return (
     <div className={styles.container}>
       <article className={styles.leftArticle}>

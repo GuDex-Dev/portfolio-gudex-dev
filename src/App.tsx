@@ -2,6 +2,7 @@ import { About, Header, Projects, Skills, Contact } from "./components";
 import styles from "./App.module.css";
 
 function App() {
+  // TODO: Add responsive design
   return (
     <>
       <Header />
