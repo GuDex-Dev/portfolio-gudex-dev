@@ -2,6 +2,7 @@ import styles from "./About.module.css";
 import Photo from "./assets/gabriel.jpg";
 import GitHub from "./assets/GitHub";
 import Download from "./assets/Download";
+import LinkedIn from "./assets/LinkedIn";
 
 function About() {
 
@@ -33,6 +34,17 @@ function About() {
             rel="noreferrer"
           >
             <Download /> CV
+          </a>
+          <a
+            style={{
+              backgroundColor: "#0a66c2",
+            }}
+            className={styles.contactItem}
+            href="https://www.linkedin.com/in/gabriel-huertas-fiestas-544325274/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedIn />
           </a>
         </div>
       </article>

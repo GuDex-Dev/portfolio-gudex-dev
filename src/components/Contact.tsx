@@ -3,6 +3,7 @@ import Mail from "./assets/Mail";
 import GitHub from "./assets/GitHub";
 import styles from "./Contact.module.css";
 import Logo from "./assets/Logo_GD_Canva.png";
+import LinkedIn from "./assets/LinkedIn";
 
 function Contact() {
   return (
@@ -25,6 +26,17 @@ function Contact() {
               rel="noreferrer"
             >
               GuDex-Dev
+            </a>
+          </li>
+          <li className={styles.item}>
+            <LinkedIn />
+            <a
+              className={styles.link}
+              href="https://www.linkedin.com/in/gabriel-huertas-fiestas-544325274/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
           </li>
         </ul>

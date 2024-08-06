@@ -19,7 +19,7 @@
   flex-direction: row;
   align-items: center;
 
-  gap: 0.5rem;
+  gap: 2rem;
 
   font-size: 1.5rem;
   font-weight: 600;
@@ -28,8 +28,9 @@
   list-style: none;
 }
 
-.link {
+.link:link {
   text-decoration: none;
+  color: var(--color-title);
 }
 
 .link:visited {
