@@ -38,7 +38,7 @@ function About() {
       </article>
       <article className={styles.rightArticle}>
         <h1 className={styles.aboutName}>Gabriel Huertas</h1>
-        <h2 className={styles.aboutPosition}>Est. Ingeniería de Sistemas</h2>
+        <h2 className={styles.aboutPosition}>Desarrollador Web</h2>
         <p>
           Soy un desarrollador web proactivo, resiliente, disciplinado y
           autodidacta. Estoy en el 6to ciclo de Ingeniería de Sistemas en la
