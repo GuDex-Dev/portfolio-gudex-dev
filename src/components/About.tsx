@@ -3,8 +3,11 @@ import Photo from "./assets/gabriel.jpg";
 import GitHub from "./assets/GitHub";
 import Download from "./assets/Download";
 import LinkedIn from "./assets/LinkedIn";
+import { useAppContext } from "../context/AppContext";
+import { content } from "../data";
 
 function About() {
+  const { lang } = useAppContext();
 
   return (
     <div className={styles.container}>
@@ -29,7 +32,7 @@ function About() {
               backgroundColor: "#149eca",
             }}
             className={styles.contactItem}
-            href="https://drive.google.com/file/d/15I03xzJ-XUYF6gNiKRN9fg_5D_ysq4Cc/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1wW48SotxSTC1u_8Q3JmA2F2rCWRrL07W?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
@@ -49,22 +52,11 @@ function About() {
         </div>
       </article>
       <article className={styles.rightArticle}>
-        <h1 className={styles.aboutName}>Gabriel Huertas</h1>
-        <h2 className={styles.aboutPosition}>Desarrollador Web</h2>
-        <p>
-          Soy un desarrollador web proactivo, resiliente, disciplinado y
-          autodidacta. Estoy en el 6to ciclo de Ingeniería de Sistemas en la
-          Universidad César Vallejo.
-        </p>
-        <p>
-          Mi objetivo es adquirir experiencia en desarrollo frontend para
-          decidir si especializarme en backend, frontend o fullstack.
-        </p>
-        <p>
-          He aprendido y desarrollado proyectos por mi cuenta, complementando
-          mis estudios universitarios. Soy una promesa junior, dispuesto a dar
-          lo mejor de mí en cualquier situación.
-        </p>
+        <h1 className={styles.aboutName}>{content.about.name[lang]}</h1>
+        <h2 className={styles.aboutPosition}>{content.about.position[lang]}</h2>
+        {content.about.text[lang].map((item) => (
+          <p>{item}</p>
+        ))}
       </article>
     </div>
   );

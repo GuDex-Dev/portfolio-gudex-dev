@@ -2,13 +2,16 @@ import Phone from "./assets/Phone";
 import Mail from "./assets/Mail";
 import GitHub from "./assets/GitHub";
 import styles from "./Contact.module.css";
-import Logo from "./assets/Logo_GD_Canva.png";
+import Logo from "./assets/Logo_GD.png";
 import LinkedIn from "./assets/LinkedIn";
+import { useAppContext } from "../context/AppContext";
+import { content } from "../data";
 
 function Contact() {
+  const { lang } = useAppContext();
   return (
     <>
-      <h2 className="subtitle">Contacto</h2>
+      <h2 className="subtitle">{content.header.contact[lang]}</h2>
       <div className={styles.container}>
         <ul className={styles.list}>
           <li className={styles.item}>

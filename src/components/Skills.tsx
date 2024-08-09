@@ -1,11 +1,14 @@
 import styles from "./Skills.module.css";
 import { TECHS } from "../data";
-import { EXTRASKILLS } from "../data";
+import { LANGUAGES } from "../data";
+import { content } from "../data";
+import { useAppContext } from "../context/AppContext";
 
 function Skills() {
+  const { lang } = useAppContext();
   return (
     <>
-      <h2 className="subtitle">Habilidades</h2>
+      <h2 className="subtitle">{content.header.skills[lang]}</h2>
 
       <div className={styles.container}>
         <article className={styles.cardSkill}>
@@ -24,7 +27,7 @@ function Skills() {
         </article>
         <hr />
         <article className={styles.cardSkill}>
-          {EXTRASKILLS.map((skill) => (
+          {LANGUAGES.map((skill) => (
             <span
               style={{
                 backgroundColor: skill.color,

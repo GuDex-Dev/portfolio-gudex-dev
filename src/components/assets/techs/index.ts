@@ -1,9 +1,0 @@
-export { default as CSS3 } from "./CSS3";
-export { default as NextJS } from "./NextJS";
-export { default as ReactJS } from "./ReactJS";
-export { default as TailwindCSS } from "./TailwindCSS";
-export { default as TypeScript } from "./TypeScript";
-export { default as SQL } from "./SQL";
-export { default as Java } from "./Java";
-export { default as CSharp } from "./CSharp";
-export { default as Git } from "./Git";

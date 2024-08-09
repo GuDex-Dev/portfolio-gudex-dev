@@ -37,7 +37,6 @@ function DarkMode({ style }: Props) {
     } else {
       setLightMode();
     }
-    console.log("upd");
   }, [theme]);
 
   return (

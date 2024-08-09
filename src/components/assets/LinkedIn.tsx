@@ -10,12 +10,12 @@ function LinkedIn({ size = "2rem" }: { size?: string }) {
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0">
+        strokeWidth="0">
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
       </g>
       <g

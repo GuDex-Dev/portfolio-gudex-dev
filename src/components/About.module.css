@@ -1,17 +1,13 @@
 .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .leftArticle {
   width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-evenly;
 }
 
 .divPhoto {
@@ -40,8 +36,7 @@
 
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   flex-wrap: wrap;
 

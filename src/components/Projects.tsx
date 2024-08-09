@@ -3,22 +3,26 @@ import styles from "./Projects.module.css";
 
 import GitHub from "./assets/GitHub";
 import Link from "./assets/Link";
-import { TECHS, PROJECTS } from "../data";
+import { TECHS } from "../data";
+import { useAppContext } from "../context/AppContext";
+import { content } from "../data";
 
 function Projects() {
+  const { lang } = useAppContext();
+
   return (
     <>
       <h2 className="subtitle">
         <Code />
-        Proyectos
+        {content.header.projects[lang]}
       </h2>
 
-      {PROJECTS.map((project) => (
-        <article className={styles.projectArticle} key={project.title}>
+      {content.projects.map((project) => (
+        <article className={styles.projectArticle} key={project.title[lang]}>
           <div className={styles.projectInfo}>
             <div>
               <div className={styles.projectHeader}>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
+                <h3 className={styles.projectTitle}>{project.title[lang]}</h3>
                 <div className={styles.projectLinks}>
                   {project.url && (
                     <a
@@ -42,7 +46,7 @@ function Projects() {
                   )}
                 </div>
               </div>
-              <p>{project.description}</p>
+              <p>{project.description[lang]}</p>
             </div>
 
             <div>
@@ -73,7 +77,7 @@ function Projects() {
           <img
             className={styles.projectImage}
             src={project.image}
-            alt={project.title}
+            alt={project.title[lang]}
           />
         </article>
       ))}
