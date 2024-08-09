@@ -12,7 +12,10 @@ interface Props {
 }
 
 export function AppContextProvider({ children }: Props) {
-  const [lang, setLang] = useState<Lang>(localStorage.getItem("lang") as Lang);
+  const [lang, setLang] = useState<Lang>(() => {
+    const storedLang = localStorage.getItem("lang");
+    return storedLang ? (storedLang as Lang) : LANGS.en;
+  });
 
   const setSpanish = () => {
     localStorage.setItem("lang", LANGS.es);
@@ -25,20 +28,13 @@ export function AppContextProvider({ children }: Props) {
   };
 
   useEffect(() => {
-    switch (lang) {
-      case LANGS.es:
-        setSpanish();
-        break;
-      case LANGS.en:
-        setEnglish();
-        break;
+    // Update the language in localStorage whenever lang changes
+    if (lang === LANGS.es) {
+      setSpanish();
+    } else if (lang === LANGS.en) {
+      setEnglish();
     }
   }, [lang]);
-
-  useEffect(() => {
-    const l = localStorage.getItem("lang") as Lang;
-    if (l) setLang(l);
-  }, []);
 
   return (
     <AppContext.Provider value={{ setEnglish, setSpanish, lang }}>
