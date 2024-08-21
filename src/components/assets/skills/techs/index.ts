@@ -7,3 +7,4 @@ export { default as SQL } from "./SQL";
 export { default as Java } from "./Java";
 export { default as CSharp } from "./CSharp";
 export { default as Git } from "./Git";
+export { default as SpringFramework } from "./SpringFramework";

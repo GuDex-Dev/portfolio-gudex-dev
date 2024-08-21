@@ -44,6 +44,11 @@ export const TECHS = [
     icon: techs.Java,
   },
   {
+    name: "Spring",
+    color: "#6db33f",
+    icon: techs.SpringFramework,
+  },
+  {
     name: "C Sharp",
     color: "#68217a",
     icon: techs.CSharp,
